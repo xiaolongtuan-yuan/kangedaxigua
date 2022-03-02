@@ -1,0 +1,46 @@
+<view class="pages">
+  <view class="all">
+    <view class="list">
+      <scroll-view scroll-y="true" refresher-enabled="true" refresher-background="white">
+        <view class="list-text">
+          <view class="biaoqian">队长:</view>
+        </view>
+        <view class="list-text">
+        </view>
+        <view class="list-text">
+        </view>
+        <view class="list-text">
+        </view>
+        <view class="list-text">
+        </view>
+        <view class="list-text">
+        </view>
+        <view class="list-text">
+        </view>
+        <view class="list-text">
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="list2">
+    <scroll-view scroll-y="true" refresher-enabled="true" refresher-background="white">
+      <view class="list-text">
+        <view class="biaoqian">好友:</view>
+      </view>
+      <view class="list-text">
+      </view>
+      <view class="list-text">
+      </view>
+      <view class="list-text">
+      </view>
+      <view class="list-text">
+      </view>
+      <view class="list-text">
+      </view>
+      <view class="list-text">
+      </view>
+      <view class="list-text">
+      </view>
+    </scroll-view>
+  </view>
+</view>

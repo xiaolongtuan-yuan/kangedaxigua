@@ -1,0 +1,14 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.pages{
+  height: 100vh;
+  background-image:url('https://636c-cloud1-5g985mxfe72bae49-1306411937.tcb.qcloud.la/images/backgrand.png');
+}

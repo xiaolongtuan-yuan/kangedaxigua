@@ -1,0 +1,53 @@
+<view class="pages">
+  <button wx:if="{{!user}}" bindtap="logup" class="button1">授权登录</button>
+  <view wx:else>
+    <view class="top">
+      <image src="{{user.avatarUrl}}" class="touxiang"></image>
+      <view class="left">
+        <view class="nicheng">{{user.nickName}}</view>
+        <view class="sheshi0">
+          <view class="shezhi" bindtap="toshezhi">设置</view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <scroll-view scroll-y="true" bindscrolltolower="jiazai" enhanced="true" fast-deceleration="true" refresher-enabled="true">
+        <view wx:for="{{list}}">
+          <view wx:if="{{!item.finished}}">
+          <!-- 正在发车状态 -->
+            <view class="list-text1">
+              <view class="a" data-item="{{item}}" bindtap="toxiangqin">
+                <view class="info">{{item.name}}</view>
+                <view class="info">{{item.dizhi}}</view>
+                <view class="info">{{item.time}}</view>
+              </view>
+              <view class="right">
+                <view class="money">{{item.money}}</view>
+                <button data-item="{{item}}" class="finish" bindtap="finish" type="primary">结束车队</button>
+              </view>
+            </view>
+          </view>
+          <view wx:else>
+            <!-- 已经结束的车队 -->
+            <view class="list-text2">
+              <view class="a" data-item="{{item}}" bindtap="toxiangqin">
+                <view class="info">{{item.name}}</view>
+                <view class="info">{{item.dizhi}}</view>
+                <view class="info">{{item.time}}</view>
+              </view>
+              <view class="right">
+                <view class="money">{{item.money}}</view>
+                <button data-item="{{item}}" class="finish" bindtap="start">重新发车</button>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+
+    </view>
+    <view class="faqi" bindtap="jump">
+      <image src="../../images/add.png" class="faqi-add"></image>
+      <!-- <view class="faqi-text">发起车队</view>  -->
+    </view>
+  </view>
+</view>

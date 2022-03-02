@@ -1,0 +1,32 @@
+.all{
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  margin: 15rpx 30rpx;
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 50%);
+  border-radius: 20rpx;
+}
+.list2 {
+  margin: 10rpx 30rpx;
+  height: 65vh;
+  background-color: rgba(255, 255, 255, 50%);
+  border-radius: 20rpx;
+}
+scroll-view{
+  height: 100%;
+}
+.list-text{
+  height: 70rpx;
+  margin: 10rpx 10rpx;
+  border-bottom-style: solid;
+  border-width: 3rpx;
+  border-color: white;
+}
+
+.biaoqian{
+  color: white;
+  
+}

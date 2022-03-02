@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/quanzi/quanzi",
+    "pages/wode/wode",
+    "pages/faqi/faqi",
+    "pages/xiangqin/xiangqin",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/shezhi/shezhi"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#52884f",
+    "navigationBarTitleText": "夏日大西瓜",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color":"#52884f",
+    "list": [{
+    "pagePath": "pages/quanzi/quanzi",
+      "text": "圈子",
+      "iconPath": "images/quanzi2.png",
+      "selectedIconPath":"images/quanzi.png"
+    },{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/home2.png",
+      "selectedIconPath": "images/home.png"
+    },{
+      "pagePath": "pages/wode/wode",
+        "text": "我的",
+        "iconPath": "images/wode2.png",
+        "selectedIconPath":"images/wode.png"
+      }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

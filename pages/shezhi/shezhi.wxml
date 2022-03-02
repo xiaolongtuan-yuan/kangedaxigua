@@ -1,0 +1,31 @@
+<view class="pages">
+  <view class="all">
+    <view class="list">
+      <view class="title">
+        <image src="../../images/set.png"></image>
+        <view>{{user.nickName}}</view>
+      </view>
+      <view class="shuru">
+        <view class="biaoqian">称呼 ：</view>
+        <input type="text" bindinput="input_duiming" />
+      </view>
+      <view class="shuru">
+        <view class="biaoqian">地址 ：</view>
+        <input type="text" bindinput="input_dizhi" />
+      </view>
+      <view class="shuru">
+        <view class="biaoqian">联系方式 ：</view>
+        <input type="text" bindinput="input_time" />
+      </view>
+      <view class="shuru">
+        <view class="biaoqian">爱好 ：</view>
+        <textarea bindinput="input_money" />
+        <!-- 最大输入长度默认140 -->
+      </view>
+      <button type="primary" bindtap="logout">退出登录</button>
+    </view>
+
+  </view>
+
+
+</view>

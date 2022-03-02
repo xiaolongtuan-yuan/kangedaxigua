@@ -1,0 +1,41 @@
+<view class="pages">
+  <swiper class="swip" indicator-dots="true" indicator-color="grey" autoplay="true">
+    <view wx:if="{{!images}}">
+      <swiper-item style="background:green">
+      </swiper-item>
+      <swiper-item style="background:yellow">
+      </swiper-item>
+      <swiper-item style="background:white">
+      </swiper-item>
+    </view>
+    <view wx:else>
+      <view wx:for="{{images}}">
+        <swiper-item style="background:green" src>
+          <image src="{{item.image}}"></image>
+        </swiper-item>
+      </view>
+    </view>
+
+  </swiper>
+  <view class="text1">热门车队：</view>
+  <view class="remen1">
+    <view class="remen">1</view>
+    <view class="remen">2</view>
+    <view class="remen">3</view>
+  </view>
+  <view class="list">
+    <scroll-view scroll-y="true" bindscrolltolower="jiazai" enhanced="true" fast-deceleration="true">
+      <view wx:for="{{list}}">
+        <view class="list-text" data-item="{{item}}" bindtap="toxiangqin">
+          <view class="a">
+            <view class="info">{{item.name}}</view>
+            <view class="info">{{item.dizhi}}</view>
+            <view class="info">{{item.time}}</view>
+          </view>
+          <view class="money">{{item.money}}</view>
+        </view>
+      </view>
+    </scroll-view>
+
+  </view>
+</view>

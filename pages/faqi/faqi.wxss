@@ -1,0 +1,56 @@
+.all{
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  margin: 15rpx 30rpx;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 50%);
+  border-radius: 20rpx;
+}
+
+scroll-view{
+  height: 100%;
+}
+.list-text{
+  height: 100rpx;
+  margin-left: 150rpx;
+  border-bottom-style: solid;
+  border-width: 3rpx;
+  border-color: white;
+}
+.title{
+  font-size: 70rpx;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 10rpx 0rpx;
+}
+.biaoqian{
+  font-size: 40rpx;
+  margin-bottom: 20rpx ;
+  margin-left: 20rpx;
+  color: white;
+}
+.bottom{
+  margin:20rpx 30rpx 0rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.addphoto{
+  height: 200rpx;
+  width: 200rpx;
+}
+.jiantou{
+  height: 150rpx;
+  width: 150rpx;
+}
+/* 输入框 */
+.shuru{
+  display: flex;
+}
+input{
+  height: 30rpx;
+  color: white;
+  margin-top: 10rpx;
+}

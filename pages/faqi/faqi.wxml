@@ -1,0 +1,38 @@
+<view class="pages">
+  <view class="all">
+    <view class="list">
+      <scroll-view scroll-y="true" refresher-enabled="true" refresher-background="white">
+        <view class="title">发起-></view>
+        <view class="shuru">
+          <view class="biaoqian">队名 ：</view>
+          <input type="text" bindinput="input_duiming" />
+        </view>
+        <view class="shuru">
+          <view class="biaoqian">地址 ：</view>
+          <input type="text" bindinput="input_dizhi" />
+        </view>
+        <view class="shuru">
+          <view class="biaoqian">时间 ：</view>
+          <input type="text" bindinput="input_time" />
+        </view>
+        <view class="shuru">
+          <view class="biaoqian">花费 ：</view>
+          <input type="text" bindinput="input_money" />
+        </view>
+        <view class="shuru">
+          <view class="biaoqian">备注 ：</view>
+          <input type="text" bindinput="input_beizhu" />
+        </view>
+        <view class="photos" wx:for="{{imagelist}}">
+          <image src="item">
+
+          </image>
+        </view>
+      </scroll-view>
+      <view class="bottom">
+        <image src="../../images/photo.png" class="addphoto" bindtap="addfile"></image>
+        <image src="../../images/jiantou.png" class="jiantou" bindtap="upload"></image>
+      </view>
+    </view>
+  </view>
+</view>

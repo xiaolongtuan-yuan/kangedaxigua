@@ -1,0 +1,24 @@
+<view class="pages">
+  <view class="all">
+    <view class="list">
+      <scroll-view scroll-y="true" refresher-enabled="true" refresher-background="white">
+        <view class="title">{{info.name}}</view>
+        <view class="biaoqian">队长 ：{{duizhang[0].nickname}}</view>
+        <view class="biaoqian">地址 ：{{info.dizhi}}</view>
+        <view class="biaoqian">时间 ：{{info.time}}</view>
+        <view class="biaoqian">花费 ：{{info.money}}</view>
+        <view class="neirong">
+          <view class="biaoqian">内容 ：{{info.beizhu}}</view>
+        </view>
+        <view class="touxiang">
+          <view wx:for="{{duizhang}}">
+            <image src="{{item.portrait}}" class="dziamge"></image>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="bottom">
+      <button bindtap="jiaru">加入车队</button>
+    </view>
+  </view>
+</view>
